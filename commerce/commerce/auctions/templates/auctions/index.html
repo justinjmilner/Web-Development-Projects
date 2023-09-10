@@ -1,0 +1,29 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2>Active Listings</h2>
+    {% for listing in listings %}
+        {% if listing.closed %}
+            <div class="card">
+                <h5 class="card-header"><a href="{% url 'listing' listing.title %}">{{ listing.title }}</a></h5>
+                <div class="card-body">
+                    <p class="card-text">Auction closed</p>
+                </div>
+            </div>
+        {% else %}   
+            <div class="card">
+                <h5 class="card-header"><a href="{% url 'listing' listing.title %}">{{ listing.title }}</a></h5>
+                <div class="card-body">
+                    <p class="card-text">{{ listing.description }}</p>
+                    <p class="card-text">Current Bid: {{listing.bid}} </p>
+                    {% if listing.url %}
+                        <img src="{{ listing.url }}" alt="Image unavailable">
+                    {% endif %}
+                    {% if listing.category %}
+                        <p class="card-text">Category: {{ listing.category }}</p>
+                    {% endif %}
+                </div> 
+            </div>
+        {% endif %}
+    {% endfor %}
+{% endblock %}

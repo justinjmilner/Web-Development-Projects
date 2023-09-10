@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+    </head>
+    <body>
+        <h1 class="title">Advanced Search</h1>
+        <h2 class="title2">Find pages with...</h2>
+        <form action="https://www.google.com/search">
+            <input type="submit" value="Advanced Search" name="tbs" class="adv_search">
+            <ul>
+                <li>
+                    all these words:
+                    <br>
+                    <input class="adv_input" type="text" name="as_q">
+                </li>
+                <li>
+                    none of these words:
+                    <br>
+                    <input type="text" class="adv_input" name="as_eq">
+                </li>
+                <li>
+                    this exact word or phrase:
+                    <br>
+                    <input type="text" name="as_epq" class="adv_input">
+                </li>
+                <li>
+                    any of these words:
+                    <br>
+                    <input type="text" name="as_oq" class="adv_input">
+                </li>
+            </ul>
+        </form>
+        <a href="images" class="image">Image Search</a>
+        <a href="search" class="advanced">Search</a>
+    </body>
+</html>

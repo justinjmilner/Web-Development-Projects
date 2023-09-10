@@ -1,0 +1,1 @@
+happens every time you send something from server to client. its responding to a client side request.

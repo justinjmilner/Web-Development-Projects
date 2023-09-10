@@ -1,0 +1,117 @@
+.advanced {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  margin-right: 100px;
+}/*# sourceMappingURL=style.css.map */
+
+.image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 50px;
+  border-radius: 50px;
+  text-indent: 50px;
+  border: 1px solid #dadce0;
+}
+
+.search {
+  position: absolute;
+  top: 57%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  border: 0px solid #dadce0;
+  color: #202124;
+}
+
+.image_search {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  border: 0px solid #dadce0;
+  color: #202124;
+}
+
+.lucky {
+  position: absolute;
+  top: 57%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  border: 0px solid #dadce0;
+  color: #202124;
+}
+
+.adv_search {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 40px;
+  border-radius: 2px;
+  border: 0px solid #dadce0;
+  background-color: #4d90fe;
+  color: white;
+  font-weight: bold;
+border: 1px solid #3e75cd;
+}
+
+.title2 {
+  font-family: Roboto,Helvetica Neue,Arial,sans-serif;
+  transform: translate(10%);
+}
+.title{
+  font-family: Roboto,Helvetica Neue,Arial,sans-serif;
+  color: red;
+  transform: translate(10%);
+}
+
+li {
+  transform: translate(7%);
+  list-style: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: Roboto,Helvetica Neue,Arial,sans-serif;
+}
+
+.adv_input{
+  border-radius: 1px;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  font-size: 13px;
+  height: 25px;
+  padding: 1px 8px;
+  width: 300px;
+}
+
+img {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 100px;
+}

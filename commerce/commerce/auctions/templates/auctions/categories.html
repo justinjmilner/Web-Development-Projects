@@ -1,0 +1,30 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    {% if listings %}
+    <h2>Listings</h2> 
+        {% for listing in listings %}
+                <a href="{% url 'listing' listing.title %}">{{ listing }}</a>
+        {% endfor %}
+        <br>
+        <br>
+        <a href="{% url 'categories' %}">Back</a>
+    {% endif %}
+    {% if categories %}  
+    <h2>Listing Categories</h2> 
+        {% for category in categories %}
+            <div class="card">
+                <h5 class="card-header">
+                    <form action="{% url 'category' category.lower %}" method="POST">
+                        {% csrf_token %}
+                        <button type="submit">{{ category }}</button>
+                    </form>
+                </h5>
+            </div>
+        {% endfor %}
+    {% else %}   
+        <div class="card">
+            {{ message }}
+        </div>
+    {% endif %}
+{% endblock %}

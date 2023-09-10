@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Images</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+    </head>
+    <body>
+        <img alt="Google" height="92" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="272">
+        <form action="https://www.google.com/images">
+            <input type="text" name="q" class="text">
+            <input type="submit" value="Image Search" class="image_search">
+        </form>
+        <a href="advanced_search" class="advanced">Advanced Search</a>
+        <a href="search" class="image">Search</a>
+    </body>
+</html>
