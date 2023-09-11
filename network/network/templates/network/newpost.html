@@ -1,0 +1,23 @@
+{% extends "network/layout.html" %}
+
+{% block title %}
+    New Post
+{% endblock %}
+
+{% block body %}
+
+<div id ="newpost-div">
+    <h2> Write new post</h2>
+    <form action="{% url 'network:newpost'  %}" method="POST"  >
+        {% csrf_token %}          
+        
+        {{newpost_form}}
+        
+            <button type="submit"  name = "newpost" id ="newpost" class="btn btn-primary">Post</button>
+        
+        
+        
+    </form> 
+
+</div>
+{% endblock %}
