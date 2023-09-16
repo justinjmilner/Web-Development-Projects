@@ -32,10 +32,10 @@ To run any of these web applications locally, follow these steps:
    Clone this repository to your local machine:
    ```bash
     # Clone this repository to your local machine
-    git clone https://github.com/yourusername/your-web-app.git
+    git clone https://github.com/justinjmilner/Web-Development-Projects.git
 
     # Navigate to the project directory
-    cd your-web-app
+    cd Web-Development-Projects
 
     # Create a virtual environment (optional but recommended)
     python -m venv venv
