@@ -7,10 +7,6 @@ This repository contains a collection of Django web applications that replicate 
 - [Introduction](#introduction)
 - [Applications](#applications)
 - [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
